@@ -1,4 +1,4 @@
-# MailerMailer API
+# mailermailer-ruby-api
 
 mailermailer-ruby-api is a Ruby based API wrapper for the MailerMailer XML-RPC API.
 
