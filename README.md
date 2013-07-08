@@ -1,12 +1,12 @@
-# mailermailer-ruby-api
+# mailermailer-api-ruby
 
-mailermailer-ruby-api is a Ruby based API wrapper for the MailerMailer XML-RPC API.
+mailermailer-api-ruby is a Ruby based API wrapper for the MailerMailer XML-RPC API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'mailermailer-ruby-api'
+    gem 'mailermailer-api-ruby'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install mailermailer-ruby-api
+    $ gem install mailermailer-api-ruby
 
 ## Usage
 
@@ -47,4 +47,3 @@ If the call encountered an error then the response will be of type Error and `is
 Every error will have an associated error code and message which can be retrieved through the Error class accessors as seen in the example above.
 
 For the official documentation of the MailerMailer XML-RPC API please visit [here](http://www.mailermailer.com/api/index.rwp).
-
