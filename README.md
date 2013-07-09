@@ -28,12 +28,14 @@ Start making calls
 
 Handle the response appropriately
 
+    # Evaluate response
     if (MMAPI::Error::is_error?(response))
       puts "Error"
-      puts "Message: #{response.get_error_message}"
-      puts "Code: #{response.get_error_code}"
+      puts "Code: #{response.error_code}"
+      puts "Message: #{response.error_message}"
     else
-      puts "Success"
+      puts "Success\n"
+
       response.each{ |field|
         puts "-"
         puts "Fieldname: " + field["fieldname"]
