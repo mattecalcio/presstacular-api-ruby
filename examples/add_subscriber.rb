@@ -1,8 +1,5 @@
 require 'mailermailer-api-ruby'
 
-# Create our API object
-mmapi = MMAPI::Client.new('api key')
-
 subscriber = Hash.new
 
 # Open text fields
@@ -21,6 +18,9 @@ subscriber['user_attr1'] = ['a','b','c','d'];
 
 # Category fields with single selection (dropdown menu)
 subscriber['user_attr2'] = ['a'];
+
+# Create our API object
+mmapi = MMAPI::Client.new('api key')
 
 # Evaluate response
 response = mmapi.add_subscriber(subscriber)
