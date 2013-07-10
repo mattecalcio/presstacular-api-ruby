@@ -4,7 +4,7 @@ module MMAPI
   # Class that helps to connect to the MailerMailer API
   #
   class Call
-    API_URL = 'http://api.mailermailer.com/1.0/';
+    API_URL = 'https://api.mailermailer.com/1.0/';
     API_VERSION = 'v1.0';
 
     # Point our client to the API end point
