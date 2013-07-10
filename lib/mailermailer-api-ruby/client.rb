@@ -6,14 +6,14 @@ module MMAPI
   class Client
 
     def initialize(apikey)
-      @mmapi_rpc_call = MMAPI::Call.new(apikey)
+      @mmapi_call = MMAPI::Call.new(apikey)
     end
 
     # Ping MailerMailer
     #
     def ping
       params = Hash.new
-      response = @mmapi_rpc_call.executeMethod('ping', params)
+      response = @mmapi_call.executeMethod('ping', params)
       return response
     end
 
@@ -21,7 +21,7 @@ module MMAPI
     #
     def get_form_fields
       params = Hash.new
-      response = @mmapi_rpc_call.executeMethod('getFormFields', params)
+      response = @mmapi_call.executeMethod('getFormFields', params)
       return response
     end
 
@@ -32,7 +32,7 @@ module MMAPI
       params["subscriber"] = subscriber
       params["send_invite"] = send_invite
       params["send_welcome"] = send_welcome 
-      response = @mmapi_rpc_call.executeMethod('addSubscriber', params)
+      response = @mmapi_call.executeMethod('addSubscriber', params)
       return response
     end
 
@@ -41,7 +41,7 @@ module MMAPI
     def unsub_subscriber(subscriber_email)
       params = Hash.new
       params["subscriber_email"] = subscriber_email
-      response = @mmapi_rpc_call.executeMethod('unsubSubscriber', params)
+      response = @mmapi_call.executeMethod('unsubSubscriber', params)
       return response
     end
 
