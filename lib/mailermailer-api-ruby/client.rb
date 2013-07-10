@@ -38,10 +38,9 @@ module MMAPI
 
     # Unsubscribes the subscriber associated with the given email
     #
-    def unsub_subscriber(subscriber_email, permanent = false)
+    def unsub_subscriber(subscriber_email)
       params = Hash.new
       params["subscriber_email"] = subscriber_email
-      params["permanent"] = permanent
       response = @mmapi_rpc_call.executeMethod('unsubSubscriber', params)
       return response
     end
