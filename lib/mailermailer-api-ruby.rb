@@ -1,6 +1,5 @@
-require 'MMAPI/version'
 require 'xmlrpc/client'
 
-require 'MMAPI/client'
-require 'MMAPI/call'
-require 'MMAPI/error'
+require 'mailermailer-api-ruby/client'
+require 'mailermailer-api-ruby/call'
+require 'mailermailer-api-ruby/error'
