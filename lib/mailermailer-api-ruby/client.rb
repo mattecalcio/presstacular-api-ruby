@@ -9,6 +9,14 @@ module MMAPI
       @mmapi_rpc_call = MMAPI::Call.new(apikey)
     end
 
+    # Ping MailerMailer
+    #
+    def ping
+      params = Hash.new
+      response = @mmapi_rpc_call.executeMethod('ping', params)
+      return response
+    end
+
     # Get fields needed to populate the signup form
     #
     def get_form_fields
