@@ -1,7 +1,7 @@
 require 'mailermailer-api-ruby'
 
 # Create our API object
-mmapi = MMAPI::Client.new('861d353cdf5cacc06d91d4e7136450e4')
+mmapi = MMAPI::Client.new('api key')
 
 # Get form fields
 response = mmapi.ping()
