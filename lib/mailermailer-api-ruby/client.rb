@@ -1,7 +1,7 @@
 module MMAPI
 
   #
-  # Implements a few basic functions from the MailerMailer API
+  # Implements a few basic functions from the MailerMailer API.
   #
   class Client
 
@@ -9,7 +9,8 @@ module MMAPI
       @mmapi_call = MMAPI::Call.new(apikey)
     end
 
-    # Ping MailerMailer
+    # Ping the MailerMailer API. This simple method will return "true"
+    # if you can connect with the API, or an exception if you cannot.
     #
     def ping
       params = Hash.new
@@ -17,7 +18,7 @@ module MMAPI
       return response
     end
 
-    # Get fields needed to populate the signup form
+    # Returns the fields needed to populate an add subscriber form.
     #
     def get_form_fields
       params = Hash.new
@@ -25,7 +26,7 @@ module MMAPI
       return response
     end
 
-    # Add the specifed subscriber
+    # Add the specified subscriber record to the account email list.
     #
     def add_subscriber(subscriber, send_invite = true, send_welcome = false)
       params = Hash.new
@@ -36,7 +37,7 @@ module MMAPI
       return response
     end
 
-    # Unsubscribes the subscriber associated with the given email
+    # Unsubscribe the subscriber email address from the account email list.
     #
     def unsub_subscriber(subscriber_email)
       params = Hash.new

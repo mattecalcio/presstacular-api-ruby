@@ -1,14 +1,14 @@
 module MMAPI
   
   #
-  # Class needed to encapsulate a MailerMailer API error
+  # Class needed to encapsulate a MailerMailer API error.
   #
   class Error
     
     attr_accessor :error_code
     attr_accessor :error_message
 
-    # Initialize Error
+    # Initialize Error.
     #
     def initialize(error_code, error_message)
       @error_code = error_code
@@ -16,7 +16,7 @@ module MMAPI
     end
     
     # Determine if the given object is an
-    # instance of Error
+    # instance of Error.
     #
     def self.is_error?(api_object)
       if (api_object.instance_of?(MMAPI::Error))
