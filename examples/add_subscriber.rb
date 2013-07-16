@@ -6,8 +6,9 @@ if ENV['MMAPI_KEY'] == nil
   exit
 end
 
+# Make sure we have an email address
 if ENV['MMAPI_TEST_EMAIL'] == nil
-  puts 'Set ENV[MMAPI_TEST_EMAIL] to use this example'
+  puts 'Set ENV["MMAPI_TEST_EMAIL"] to use this example'
   exit
 end
 
