@@ -5,7 +5,7 @@ module MMAPI
   #
   class Call
     API_URL = (ENV["MMAPI_URL"] ? ENV["MMAPI_URL"] : "https://api.mailermailer.com/1.0/");
-    API_VERSION = 'v1.0';
+    API_VERSION = 'v1.0.1';
 
     # Point our client to the API end point.
     #
