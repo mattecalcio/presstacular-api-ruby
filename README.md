@@ -54,6 +54,14 @@ Every error will have an associated error code and message which can be retrieve
 
 For the official documentation of the MailerMailer XML-RPC API please visit [here](http://www.mailermailer.com/api/index.rwp).
 
+## Examples
+
+We have provided examples for each call available in the API in the examples folder. In order
+to run the examples make sure you have the following environmental variables set:
+
+    MMAPI_KEY = 'your api key will go here'
+    MMAPI_TEST_EMAIL = 'the email address that you would like to use will go here'
+
 ## Troubleshooting
 
 If you encounter SSL problems while using the gem, and if you specifically see
