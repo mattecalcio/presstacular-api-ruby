@@ -2,6 +2,10 @@
 
 mailermailer-api-ruby is a Ruby based API wrapper for the MailerMailer XML-RPC API.
 
+## Requirements
+
+Ruby 1.9.3
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -49,3 +53,14 @@ If the call encountered an error then the response will be of type Error and `is
 Every error will have an associated error code and message which can be retrieved through the Error class accessors as seen in the example above.
 
 For the official documentation of the MailerMailer XML-RPC API please visit [here](http://www.mailermailer.com/api/index.rwp).
+
+## Troubleshooting
+
+If you encounter SSL problems while using the gem, and if you specifically see
+this error message:
+
+    connect': SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: 
+    certificate verify failed (OpenSSL::SSL::SSLError)
+
+it is an indication that your environment variables are incorrect, but if that isn't the case
+feel free to refer to this helpful [guide](http://railsapps.github.io/openssl-certificate-verify-failed.html) for assistance.
