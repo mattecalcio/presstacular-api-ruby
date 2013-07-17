@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "mailermailer-api-ruby"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.2"
   spec.authors       = ["MailerMailer"]
   spec.email         = ["support@mailermailer.com"]
   spec.description   = %q{XMLRPC MailerMailer API wrapper for Ruby}
