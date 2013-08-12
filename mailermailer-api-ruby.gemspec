@@ -1,10 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'mailermailer-api-ruby/config'
 
 Gem::Specification.new do |spec|
   spec.name          = "mailermailer-api-ruby"
-  spec.version       = "1.0.2"
+  spec.version       = MAILAPI::VERSION
   spec.authors       = ["MailerMailer"]
   spec.email         = ["support@mailermailer.com"]
   spec.description   = %q{XMLRPC MailerMailer API wrapper for Ruby}
