@@ -1,6 +1,6 @@
-# mailermailer-api-ruby
+# presstacular-api-ruby
 
-mailermailer-api-ruby is a Ruby based API wrapper for the MailerMailer XML-RPC API.
+presstacular-api-ruby is a Ruby based API wrapper for the Presstacular XML-RPC API.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ Ruby 1.9.3
 
 Add this line to your application's Gemfile:
 
-    gem 'mailermailer-api-ruby'
+    gem 'presstacular-api-ruby'
 
 And then execute:
 
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install mailermailer-api-ruby
+    $ gem install presstacular-api-ruby
 
 ## Usage
 
@@ -52,7 +52,7 @@ Checking the success or failure of any call can be easily done by invoking `MAIL
 If the call encountered an error then the response will be of type Error and `is_error?` will return true, otherwise the call succeeded.
 Every error will have an associated error code and message which can be retrieved through the Error class accessors as seen in the example above.
 
-For the official documentation of the MailerMailer XML-RPC API please visit [here](http://www.mailermailer.com/api/index.rwp).
+For the official documentation of the Presstacular XML-RPC API please visit [here](http://www.presstacular.com/api/index.rwp).
 
 ## Examples
 
