@@ -1,4 +1,4 @@
-Copyright (c) 2001-2013 MailerMailer LLC
+Copyright (c) 2001-2013 Presstacular LLC
 
 MIT License
 

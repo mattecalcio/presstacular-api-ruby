@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mailermailer-api-ruby/config'
+require 'presstacular-api-ruby/config'
 
 Gem::Specification.new do |spec|
-  spec.name          = "mailermailer-api-ruby"
+  spec.name          = "presstacular-api-ruby"
   spec.version       = MAILAPI::VERSION
-  spec.authors       = ["MailerMailer"]
-  spec.email         = ["support@mailermailer.com"]
-  spec.description   = %q{XMLRPC MailerMailer API wrapper for Ruby}
-  spec.summary       = %q{The MailerMailer XMLRPC API wrapper}
-  spec.homepage      = "https://github.com/mailermailer/mailermailer-api-ruby"
+  spec.authors       = ["Presstacular"]
+  spec.email         = ["support+pt@mailermailer.com"]
+  spec.description   = %q{XMLRPC Presstacular API wrapper for Ruby}
+  spec.summary       = %q{The Presstacular XMLRPC API wrapper}
+  spec.homepage      = "https://github.com/presstacular/presstacular-api-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -5,10 +5,10 @@ module MAILAPI
   # ESENTIAL TO THE FUNCTIONALITY OF THIS API WRAPPER
   #
   
-  ENDPOINT = "https://api.mailermailer.com/1.0/"
+  ENDPOINT = "https://api.presstacular.com/1.0/"
 
   VERSION = "1.0.3"
 
-  PARTNER = "MM"
+  PARTNER = "PT"
 
 end

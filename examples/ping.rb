@@ -1,4 +1,4 @@
-require 'mailermailer-api-ruby'
+require 'presstacular-api-ruby'
 
 # Make sure we have an api key
 if ENV['MAILAPI_KEY'] == nil
