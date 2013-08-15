@@ -1,7 +1,7 @@
-module MMAPI
+module MAILAPI
   
   #
-  # Class needed to encapsulate a MailerMailer API error.
+  # Class needed to encapsulate a Mail API error.
   #
   class Error
     
@@ -19,7 +19,7 @@ module MMAPI
     # instance of Error.
     #
     def self.is_error?(api_object)
-      if (api_object.instance_of?(MMAPI::Error))
+      if (api_object.instance_of?(MAILAPI::Error))
         return true
       end
       return false

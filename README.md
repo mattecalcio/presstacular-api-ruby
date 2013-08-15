@@ -24,16 +24,16 @@ Or install it yourself as:
 
 Create a Client instance:
 
-    mmapi = MMAPI::Client.new('api key')
+    mailapi = MAILAPI::Client.new('api key')
   
 Start making calls
 
-    response = mmapi.get_form_fields()
+    response = mailapi.get_form_fields()
 
 Handle the response appropriately
 
     # Evaluate response
-    if (MMAPI::Error::is_error?(response))
+    if (MAILAPI::Error::is_error?(response))
       puts "Error"
       puts "Code: #{response.error_code}"
       puts "Message: #{response.error_message}"
@@ -48,7 +48,7 @@ Handle the response appropriately
       }
     end
 
-Checking the success or failure of any call can be easily done by invoking `MMAPI::Error::is_error?` on the response.
+Checking the success or failure of any call can be easily done by invoking `MAILAPI::Error::is_error?` on the response.
 If the call encountered an error then the response will be of type Error and `is_error?` will return true, otherwise the call succeeded.
 Every error will have an associated error code and message which can be retrieved through the Error class accessors as seen in the example above.
 
@@ -59,8 +59,8 @@ For the official documentation of the MailerMailer XML-RPC API please visit [her
 We have provided examples for each call available in the API in the examples folder. In order
 to run the examples make sure you have the following environmental variables set:
 
-    MMAPI_KEY = 'your api key will go here'
-    MMAPI_TEST_EMAIL = 'the email address that you would like to use will go here'
+    MAILAPI_KEY = 'your api key will go here'
+    MAILAPI_TEST_EMAIL = 'the email address that you would like to use will go here'
 
 ## Troubleshooting
 
