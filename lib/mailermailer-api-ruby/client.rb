@@ -46,23 +46,5 @@ module MAILAPI
       return response
     end
 
-    # Suppress the subscriber email address.
-    #
-    def suppress(subscriber_email)
-      params = Hash.new
-      params["subscriber_email"] = subscriber_email
-      response = @mailapi_call.executeMethod('suppress', params)
-      return response
-    end
-
-    # Unsuppress the subscriber email address.
-    #
-    def unsuppress(subscriber_email)
-      params = Hash.new
-      params["subscriber_email"] = subscriber_email
-      response = @mailapi_call.executeMethod('unsuppress', params)
-      return response
-    end
-
   end
 end
