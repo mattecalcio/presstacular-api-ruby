@@ -7,7 +7,7 @@ module MAILAPI
   
   ENDPOINT = "https://api.presstacular.com/1.0/"
 
-  VERSION = "1.0.3"
+  VERSION = "1.0.4"
 
   PARTNER = "PT"
 

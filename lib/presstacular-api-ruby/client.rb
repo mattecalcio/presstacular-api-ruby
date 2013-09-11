@@ -18,7 +18,7 @@ module MAILAPI
       return response
     end
 
-    # Returns the fields needed to populate an add subscriber form.
+    # Returns the fields needed to create a list member or to create/populate a signup form.
     #
     def get_form_fields
       params = Hash.new
@@ -26,23 +26,23 @@ module MAILAPI
       return response
     end
 
-    # Add the specified subscriber record to the account email list.
+    # Add the specified member record to the account email list.
     #
-    def add_subscriber(subscriber, send_invite = true, send_welcome = false)
+    def add_member(member, send_invite = true, send_welcome = false)
       params = Hash.new
-      params["subscriber"] = subscriber
+      params["member"] = member
       params["send_invite"] = send_invite
       params["send_welcome"] = send_welcome 
-      response = @mailapi_call.executeMethod('addSubscriber', params)
+      response = @mailapi_call.executeMethod('addMember', params)
       return response
     end
 
-    # Unsubscribe the subscriber email address from the account email list.
+    # Unsubscribe the email address from the account email list.
     #
-    def unsub_subscriber(subscriber_email)
+    def unsub_member(user_email)
       params = Hash.new
-      params["subscriber_email"] = subscriber_email
-      response = @mailapi_call.executeMethod('unsubSubscriber', params)
+      params["user_email"] = user_email
+      response = @mailapi_call.executeMethod('unsubMember', params)
       return response
     end
 

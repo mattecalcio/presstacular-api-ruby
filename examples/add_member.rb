@@ -12,35 +12,35 @@ if ENV['MAILAPI_TEST_EMAIL'] == nil
   exit
 end
 
-subscriber = Hash.new
+member = Hash.new
 
 # Open text fields
-subscriber['user_email'] = ENV['MAILAPI_TEST_EMAIL'];
-subscriber['user_fname'] = 'John';
-subscriber['user_lname'] = 'Doe';
+member['user_email'] = ENV['MAILAPI_TEST_EMAIL'];
+member['user_fname'] = 'John';
+member['user_lname'] = 'Doe';
 
 # Country
-subscriber['user_country'] = 'us';
+member['user_country'] = 'us';
 
 # State
-subscriber['user_state'] = 'md';
+member['user_state'] = 'md';
 
 # Category fields with multiple selection (checkboxes)
-subscriber['user_attr1'] = ['a','b','c','d'];
+member['user_attr1'] = ['a','b','c','d'];
 
 # Category fields with single selection (dropdown menu)
-subscriber['user_attr2'] = ['a'];
+member['user_attr2'] = ['a'];
 
 # Create our API object
 mailapi = MAILAPI::Client.new(ENV['MAILAPI_KEY'])
 
 # Evaluate response
-response = mailapi.add_subscriber(subscriber)
+response = mailapi.add_member(member)
 
 if (MAILAPI::Error::is_error?(response))
   puts "Error"
   puts "Code: #{response.error_code}"
   puts "Message: #{response.error_message}"
 else
-  puts "Success added subscriber"
+  puts "Success added member"
 end
