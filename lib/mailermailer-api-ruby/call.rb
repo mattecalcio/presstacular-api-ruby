@@ -5,7 +5,6 @@ module MAILAPI
   #
   class Call
     API_URL = (ENV["MAILAPI_URL"] ? ENV["MAILAPI_URL"] : MAILAPI::ENDPOINT)
-    API_VERSION = 'v1.0.2'
 
     # Point our client to the API end point.
     #

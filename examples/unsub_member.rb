@@ -16,7 +16,7 @@ end
 mailapi = MAILAPI::Client.new(ENV['MAILAPI_KEY'])
 
 # Unsubscribe user
-response = mailapi.unsub_subscriber(ENV['MAILAPI_TEST_EMAIL'])
+response = mailapi.unsub_member(ENV['MAILAPI_TEST_EMAIL'])
 
 # Evaluate response
 if (MAILAPI::Error::is_error?(response))
